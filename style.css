@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+
+
+div {
+    font-family: Helvetica;
+    background-color: black;
+    color: white;
+    font-size: 34px;
+    padding: 5px;
+
+
+}
+
+nav {
+    flex-direction: column;
+    background-color: black;
+    padding: 5px;
+    justify-content: space-evenly;
+
+
+}
+
+.items:hover {
+    background-color: grey;
+    opacity: 0.5;
+}
+
