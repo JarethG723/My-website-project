@@ -1,30 +1,62 @@
 body {
     margin: 0;
+    background-color: gray
+}
+
+h1 {
+    text-align: center;
+}
+.item {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+#accordion {
+    margin: 100px auto;
+    width: 600px;
+    /* 600px */
+}
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 
-
-div {
-    font-family: Helvetica;
-    background-color: black;
-    color: white;
-    font-size: 34px;
-    padding: 5px;
-
-
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 450;
+    cursor: pointer;
+    color: blue;
 }
 
-nav {
-    flex-direction: column;
-    background-color: black;
-    padding: 5px;
-    justify-content: space-evenly;
 
-
+#accordion li label span {
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: black;
 }
 
-.items:hover {
-    background-color: grey;
-    opacity: 0.5;
+
+#accordion label + input[type="radio"] {
+    display: none;
+}
+#accordion .content {
+    padding: 0 10px;
+    /* line-height: 26; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 250px;
 }
 
